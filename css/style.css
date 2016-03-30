@@ -379,6 +379,7 @@
 				top: 50%;
 				width: 1em;
 				z-index: 1;
+                opacity: 0.3;
 			}
 
 			.image.icon:hover:before {
@@ -387,6 +388,7 @@
 				-o-transform: translateZ(1em);
 				-ms-transform: translateZ(1em);
 				transform: translateZ(1em);
+                opacity: 0.9;
 			}
 
 			.image.icon:hover:after {
@@ -821,7 +823,13 @@
 			font-size: 1.5em;
 			line-height: 1.5em;
 			margin: 0.25em 0 0 0;
+
 		}
+        #header .background {
+            background-color: rgba(61, 58, 62, 0.50);
+            padding-bottom: 1px;
+        }
+
 
 /* Footer */
 

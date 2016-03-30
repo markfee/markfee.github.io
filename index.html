@@ -25,11 +25,15 @@
 
 		<!-- Header -->
 			<div id="header">
-				<span class="logo icon fa-paper-plane-o"></span>
-				<h1>Hi. This is Mark Fee.</h1>
-				<p>A web developer specialising in <a href="http://laravel.com">Laravel</a> and <a href="https://angularjs.org">AngularJS</a>.
-                    <br />
-				Checkout my code on <a href="https://github.com/markfee">GitHub</a>.</p>
+                <div class="background">
+                    <h1>Hi. This is Mark Fee.</h1>
+                    <p>A web developer specialising in <a href="http://laravel.com">Laravel</a> and <a href="https://angularjs.org">AngularJS</a>.
+                        <br />
+                    Checkout my code on <a href="https://github.com/markfee">GitHub</a>.</p>
+                    <ul class="icons">
+                        <li><a href="#main" class="icon fa-play"><span class="label">Play</span></a></li>
+                    </ul>
+                </div>
 			</div>
 
 		<!-- Main -->
@@ -40,15 +44,16 @@
                         <br/>That's a lot of bad code
                         <br/>And some good code too!
                     </h2>
-					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
+
+                    <ul class="icons">
+                        <li><a href="#do_now" class="icon fa-forward"><span class="label">Play</span></a></li>
+                    </ul>
+
 				</header>
 				
 				<div class="box alt container">
-					<section class="feature left">
-						<a href="#" class="image icon fa-signal"><img src="images/science.jpg" alt="" /></a>
+					<section id="do_now" class="feature left">
+                        <a href="#used_to_do" class="image icon fa-forward"><img src="images/science.jpg" alt="" /></a>
 						<div class="content">
 							<h3>What I Do Now</h3>
 							<p>
@@ -56,43 +61,80 @@
                                 developing software solutions that support science projects. These range from small bespoke
                                 database applications to complex mathematical models.
                             </p>
+
+
 						</div>
 					</section>
-					<section class="feature right">
-						<a href="#" class="image icon fa-code"><img src="images/grangehill.jpg" alt="" /></a>
-						<div class="content">
-							<h3>What I used to do</h3>
-							<p>
+                    <section id="used_to_do"  class="feature right">
+                        <a href="#prior_to_that" class="image icon fa-forward"><img src="images/grangehill.jpg" alt="" /></a>
+                        <div class="content">
+                            <h3>What I used to do</h3>
+                            <p>
                                 I spent a few years as systems manager at a secondary school. I developed bespoke software,
                                 mostly related to assessment and reporting, scheduled the schools timetable and managed
                                 a team covering the schools ICT and exams provision.
-
-							</p>
-						</div>
-					</section>
-					<section class="feature left">
-						<a href="#" class="image icon fa-mobile"><img src="images/embroidery.jpg" alt="" /></a>
-						<div class="content">
-							<h3>What else?</h3>
-							<p>
+                            </p>
+                        </div>
+                    </section>
+                    <section id="prior_to_that" class="feature left">
+                        <a href="#skillz" class="image icon fa-forward"><img src="images/embroidery.jpg" alt="" /></a>
+                        <div class="content">
+                            <h3>What else?</h3>
+                            <p>
                                 Prior to that I was developing Embroidery design software in Visual C++ and writing bespoke
                                 workflow management solutions for small businesses.
-							</p>
-						</div>
-					</section>
+                            </p>
+                        </div>
+                    </section>
 				</div>
-				
 
-				<footer class="major container 75%">
+
+                <div class="box container" id="skillz">
+                    <header >
+                        <h2>So what can I do?</h2>
+                        <a href="#prior_to_that" class="image icon fa-code"><img src="images/moss.jpg" alt="I can coding" /></a>
+                    </header>
+                    <section >
+                        <header>
+                            <h3>... well</h3>
+                        </header>
+                        <p>I've been doing what I do for a while now, so I've put my hand to quite a few languages and technolgies over the years, but as a summary...
+                            <ul>
+                                <li> I can create a restful api using Laravel 5.</li>
+                                <li> I can consume that API using AngularJS</li>
+                                <li> I can set up an Apache 2 vhost to serve the api</li>
+                                <li> I can set up a Debian / Ubuntu server to host apache</li>
+                                <li> I can install and develop a MySql database to provide data for the api...</li>
+                                <li>... or MongoDb if you prefer (might have to check the manual on that one)</li>
+                                <li> I can set up a NodeJs Host running on a different port ...</li>
+                                <li> .. and I can reverse proxy a subdomain to serve the NodeJs app</li>
+                                <li>
+                                    I can develop a multi threaded Java application that performs a Monte Carlo Simulation based on complex Mathematical models.
+                                </li>
+                                <li>
+                                    I can maintain the codebase on a git server
+                                </li>
+                                <li>I can Grunt, NPM, Bower...</li>
+                            <li>
+                            ... or svn if you prefer
+                                </li>
+                            <li>  I can replace the MySql DB with Sql Server (if you really want)</li>
+                            <li>  ... or Oracle DB (starting to stretch the truth a little here)</li>
+                            <li> I was pretty good at C++ back in the day, but it's been a while</li>
+                        </ul>
+                    </p>
+                    </section>
+                </div>
+
+
+				<footer id = "at_home" class="major container 75%">
 					<h3>At home</h3>
 					<p>
                         I live in North Yorkshire with my wife and two sons doing the normal family stuff. I
                         get out on my road and mountain bikes as often as possible and I can occasionally be found at
                         the local open mic night playing the ukelele and singing dodgy cover versions.
                     </p>
-					<ul class="actions">
-						<li><a href="#" class="button">Join our crew</a></li>
-					</ul>
+                    <a class="icon fa-forward" href="#footer" title="next"></a>
 				</footer>
 
 			</div>
@@ -101,20 +143,24 @@
 			<div id="footer">
 				<div class="container 75%">
 
-					<header class="major last">
-						<h2>That's all folks</h2>
-					</header>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/marksfee" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/fee.mark" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/feemark/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/markfee" class="icon fa-github"><span class="label">Github</span></a></li>
+                        <li><a class="icon fa-fast-backward" href="#" title="can I get a rewind ..."></a></li>
+                    </ul>
 
 
-					<ul class="icons">
-						<li><a href="https://twitter.com/marksfee" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/fee.mark" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/feemark/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/markfee" class="icon fa-github"><span class="label">Github</span></a></li>
-					</ul>
-					
+
+                    <header class="major last">
+                        <a href="#" class="image icon fa-fast-backward">
+                            <img src="images/thats_all_folks.gif" alt="That's all folks" />
+                        </a>
+                    </header>
+
 					<ul class="copyright">
-						<li>N&copy; markfee unlimited.</li><li>Designed by <a href="http://html5up.net">HTML5 UP</a>; Hacked by <a href="https://twitter.com/marksfee" class="icon fa-twitter"><span class="label">@marksfee</span></a></li>
+						<li>N&copy; markfee unlimited.</li><li>Designed by <a href="http://html5up.net">HTML5 UP</a></li><li> Hacked by <a href="https://twitter.com/marksfee"><span class="label">@marksfee</span></a></li>
 					</ul>
 			
 				</div>
