@@ -14,7 +14,7 @@
 	}
 
 	body {
-		background: white;
+		background: black;
 	}
 
 		body.is-loading * {
@@ -142,7 +142,7 @@
 		}
 
 			header.major:before, header.major:after {
-				background: rgba(224, 224, 224, 0.75);
+				/*background: rgba(224, 224, 224, 0.75);*/
 				content: '';
 				display: block;
 				height: 1px;
